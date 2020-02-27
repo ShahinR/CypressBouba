@@ -110,7 +110,7 @@ context('Navigation', () => {
 
       //How to click on the local button
       //cy.contains('Local').first().click({ force:true })
-      cy.get('[id="local_f724fd21a9f26ef4f4428c43c9118419"]').click()
-      //cy.get('[id="url_f724fd21a9f26ef4f4428c43c9118419"]').click()
+      //cy.get('[id="local_f724fd21a9f26ef4f4428c43c9118419"]').click()
+      cy.get('[id="url_f724fd21a9f26ef4f4428c43c9118419"]').click()
     })
 })
