@@ -1,11 +1,12 @@
 /// <reference types="Cypress" />
 //import './img'
 import 'cypress-file-upload'
+//import { version } from 'cypress/types/bluebird';
 
 const MAIL_ADMIN = 'bouba+admin@wiza.com';
 const PASSWORD = 'admin';
 
-const VENDOR_NAME = 'ACME';
+const VENDOR_NAME = 'MECA';
 const STATUS = 'SaaS';
 
 const FIRSTNAME = 'Eric';
@@ -18,7 +19,7 @@ const IBAN = 'FR0914508000409389586668E48';
 const BIC = 'AGFBFRCC';
 const NAF_CODE = '3213A';
 
-const MAIL_VENDOR = 'patricia+marchandbahrain@wizacha.com';
+const MAIL_VENDOR = 'bouba+marchandbahrain@wizacha.com';
 const PHONE = '0123456789';
 const SOCIETY = 'Wizaplace';
 const ADDRESS = '2 quai du commerce';
@@ -28,7 +29,7 @@ const TOWN = 'Lyon';
 context('Navigation', () => {
   
     it('Go to the sandbox home page', () => {
-      cy.visit('https://back.odin.sandbox.wizaplace.com/admin.php', {
+      cy.visit('https://back.hnoss.sandbox.wizaplace.com/admin.php', {
         })
       
       })
@@ -48,7 +49,7 @@ context('Navigation', () => {
       //  .contains(i.icon-plus).click()
         
       //Fill up our vendor informations
-      cy.contains('Nom du Marchand').click().type(VENDOR_NAME)
+      cy.contains('Nom du marchand').click().type(VENDOR_NAME)
       cy.contains('Statut légal').click().type(STATUS)
       cy.contains('Prénom du représentant légal').click().type(FIRSTNAME)
       cy.contains('Nom du représentant légal').click().type(LASTNAME)
@@ -111,6 +112,7 @@ context('Navigation', () => {
       //How to click on the local button
       //cy.contains('Local').first().click({ force:true })
       cy.get('[id="local_f724fd21a9f26ef4f4428c43c9118419"]').click()
+      //.upload(/Users/siddy/Downloads/version.png)
       //cy.get('[id="url_f724fd21a9f26ef4f4428c43c9118419"]').click()
     })
 })

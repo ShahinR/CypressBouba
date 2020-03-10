@@ -11,7 +11,7 @@ context('Navigation', () => {
   
     it('Go to our sandbox home page', () => {
       
-      cy.visit('https://back.odin.sandbox.wizaplace.com/admin.php', {
+      cy.visit('https://back.sigyn.sandbox.wizaplace.com/admin.php', {
         
         })
     })
