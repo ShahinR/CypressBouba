@@ -6,21 +6,21 @@ import 'cypress-file-upload'
 const MAIL_ADMIN = 'bouba+admin@wiza.com';
 const PASSWORD = 'admin';
 
-const VENDOR_NAME = 'MECA';
+const VENDOR_NAME = 'MAC';
 const STATUS = 'SaaS';
 
-const FIRSTNAME = 'Eric';
+const FIRSTNAME = 'Cecil';
 const LASTNAME = 'ALESSANDRINI';
-const SIRET = '362 521 879 56434';
-const TVA = '99999123459';
-const CAPITAL = '50 000';
-const RCS = '25';
+const SIRET = '362 251 879 56434';
+const TVA = '99985123459';
+const CAPITAL = '20 000';
+const RCS = '52';
 const IBAN = 'FR0914508000409389586668E48';
 const BIC = 'AGFBFRCC';
-const NAF_CODE = '3213A';
+const NAF_CODE = '3214A';
 
-const MAIL_VENDOR = 'bouba+marchandbahrain@wizacha.com';
-const PHONE = '0123456789';
+const MAIL_VENDOR = 'bouba+march@wizacha.com';
+const PHONE = '0123546789';
 const SOCIETY = 'Wizaplace';
 const ADDRESS = '2 quai du commerce';
 const ZIPCODE = '69009';
@@ -49,7 +49,7 @@ context('Navigation', () => {
       //  .contains(i.icon-plus).click()
         
       //Fill up our vendor informations
-      cy.contains('Nom du marchand').click().type(VENDOR_NAME)
+      cy.contains('Nom du Marchand').click().type(VENDOR_NAME)
       cy.contains('Statut légal').click().type(STATUS)
       cy.contains('Prénom du représentant légal').click().type(FIRSTNAME)
       cy.contains('Nom du représentant légal').click().type(LASTNAME)
