@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
+    "test-cucumber": ".\\node_modules\\.bin\\cypress-tags run -e TAGS='@feature-tag'",
     "runtests": "npm run test --"
   },
   "author": "bouba",
