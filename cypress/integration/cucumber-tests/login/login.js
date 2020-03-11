@@ -25,7 +25,7 @@ const TOWN = 'Lyon';
 
 Given('I am in the Wizaplace login page',()=>{
  
-    cy.visit("https://back.hnoss.sandbox.wizaplace.com/admin.php");
+    cy.visit("https://back.rind.sandbox.wizaplace.com/admin.php");
  
 })
  
